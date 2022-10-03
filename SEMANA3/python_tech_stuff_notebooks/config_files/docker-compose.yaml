@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+    challenge_api:
+        image: registry.gitlab.com/a-project/a-service:1
+        container_name: a-container
+        restart: always
+        ports: 
+            #- 6021:443        
+            - 6021:80
+        volumes:
+            - /home/logs:/home/logs
+            - /home/confs/challenge/appsettings.json:/App/appsettings.json
+        networks:
+            - a_net
+networks:
+    a_net:
+        name: a_net 
+                     

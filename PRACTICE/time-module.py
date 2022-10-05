@@ -1,16 +1,11 @@
 
 #print("this is the time module in python ")
 
-import sys
-
-option_list = ["option_1","option 2", "option 3","--help"]
-
-
-for comand in ((sys.argv)):
-  if comand in option_list[3]:
-    print(option_list)
-  else:
-    print("nothin")
+# for comand in ((sys.argv)):
+#   if comand in option_list[3]:
+#     print(option_list)
+#   else:
+#     print("nothin")
 
 # meetings = []
 # for path in list_files(DIR_PATH):
@@ -20,3 +15,19 @@ for comand in ((sys.argv)):
 
 # print(meetings)
 
+
+from turtle import position
+
+
+print("_________________")
+
+position = 1
+with open("tags.csv","r") as file_tags:
+  
+  print(file_tags.readline())
+  print(">>>>>>>>>>>>>>")
+  for line in file_tags:
+    print(file_tags.readline())
+  #print(file_tags.read())
+
+  #for line in file_tags:

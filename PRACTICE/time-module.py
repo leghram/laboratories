@@ -12,5 +12,11 @@ for comand in ((sys.argv)):
   else:
     print("nothin")
 
+# meetings = []
+# for path in list_files(DIR_PATH):
+#     with open(path, 'r', encoding='UTF-16') as file:
+#         meeting = process_file_data(file)
+#         meetings.append(meeting)
 
+# print(meetings)
 
